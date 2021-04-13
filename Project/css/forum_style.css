@@ -1,0 +1,157 @@
+body {margin : 0;}
+a{text-decoration: none;}
+#logo{color:black; font-weight:bold}
+#menu{color: gray;}
+/* 헤더 */
+.navbar {
+    display :flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    
+}
+.navbar_logo {
+    font-size : 24px;
+    color : black;
+}
+.navbar_menu {
+    display : flex;
+    list-style : none;
+    padding-left:0;
+    color : gray;
+}
+.navbar_menu li{
+    padding: 8px 12px;
+}
+
+#total {
+    width:1050px; margin: 0 auto;
+}
+/* 사이드 메뉴 */
+.side {
+    float : left;
+    width: 300px;
+    margin-right:10px;
+}
+.side p{
+    text-decoration: underline;
+    text-align: center;
+    font-weight:bold;
+    font-size:17px;
+}
+.side li{
+    list-style:none;
+    margin:0;
+    padding:10px;
+}
+.side #menu:hover{
+    font-weight: bold;
+}
+.side_login {
+    background-color:#6891e9;
+    padding:8px 12px;
+    height:150px;
+}
+.side_group{
+    padding: 8px 12px;
+    border: 1px solid gray;
+    border-bottom: none;
+    height:200px;
+}
+.side_menu {
+    padding: 8px 12px;
+    border: 1px solid gray;
+    height: 250px;
+}
+
+.content{
+    float:left;
+    width: 700px;
+    margin-left:10px;
+}
+.content_info {
+    width : 700px;
+    height:600px;
+    border-top: 3px solid cornflowerblue;
+    border-bottom: 2px solid gray;
+}
+
+.content_q{
+    padding-left:15px;
+}
+#q_title{
+    width:440px;
+}
+#submit{
+    margin-left:260px;
+    width:100px;
+}
+
+/* 게시판 테이블 */
+.board td{
+    text-align: center;
+}
+.board tbody tr td:nth-child(3){
+text-align: left;
+}
+.board tbody tr td:nth-child(5){
+    font-size : 10px;
+}
+
+.title a{
+    text-decoration: none;
+    color:black;
+}
+table {
+    width:700x;
+    align-items: center;
+    border-collapse:collapse;
+    border-top: 2px solid navy;
+	border-left: none;
+	border-right: none;
+}
+
+thead{
+	background-color:ghostwhite;
+	border-left:none;
+	border-right:none;
+}
+th, td {
+	padding: 5px 5px;
+	border-left: none;
+	border-right: none;
+}
+
+
+tr:hover{
+    background-color: ghostwhite;
+}
+
+#header{font-size: 30px;
+font-weight: bolder}
+
+#number{ width: 50px;}
+
+#title{ width: 400px;}
+
+#type{ width:50px;}
+
+#name{ width:70px;}
+
+#date{ width:70px;}
+
+#look{ width: 70px;}
+/*글작성버튼*/
+#write{ float: right;}
+
+.content_info_board{
+    display: block;
+}
+
+.content_info{
+    display:none;
+}
+
+#backBoard{
+    float:right;
+}

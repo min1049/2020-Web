@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/forum_style.css">
+    <title>숭실대학교 미니커뮤니티_질의응답_게시판</title>
+    <style>
+        .content_info{
+            background-color: gainsboro;
+        }
+    </style>
+    <script src="js/forum_main.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_logo">
+            <img src="media/ssulogo.png" alt="ssulogo" width="80">
+            <a id="logo" href="">숭실대학교 미니커뮤니티</a>
+        </div>
+
+        <ul class = "navbar_menu">
+            <li><a id="menu" href="">공개 그룹</a></li>
+            <li><a id="menu" href="">활동 그룹</a></li>
+            <li><a id="menu" href="">종료 그룹</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <div id="total">
+    <div class="side">
+        <div class="side_login">
+            <p>로그인 화면</p>
+        </div>
+        <div class="side_group">
+            <p>활동 그룹</p>
+            <ul>
+                <li><a id="menu" href="#">알고리즘 2020</a></li>
+                <li><a id="menu" href="#">웹프로그래밍 및 실습</a></li>
+            </ul>
+        </div>
+        <div class="side_menu">
+            <p>Mini 커뮤니티</p>
+            <ul>
+                <li><a id="menu" href="#">공지사항</a></li>
+                <li><a id="menu" href="#">자료실</a></li>
+                <li><a id="menu" href="#">질의응답</a></li>
+            </ul>
+        </div>
+    </div>
+
+    
+    <div class="content" id = "content">
+        <div>
+            <h3>미니커뮤니티_질의응답_게시판</h3>
+            <button id="backBoard" onclick ="location.href='forum_main.html'">초기화</button>
+        </div>
+        <br><br>
+        <div class="content_info_board" id = "board">
+            <table class="board" border="1">
+                <thead>
+                    <tr id = "rule">
+                        <th id = "number"><b>No.</b></th>
+                        <th id = "type">분류</th>
+                        <th id = "title"><b>제목</b></th>
+                        <th id = "name"><b>이름</b></th>
+                        <th id = "date">날짜</th>
+                        <th id = "look">조회수</th>
+                    </tr>
+                </thead>
+                <tbody id = "qna_list">
+                    <tr>
+                        <td>1</td>
+                        <td>질문</td>
+                        <td class="title">
+                            <a onclick="alert('오 된다')">안녕하세요 교수님...</a></td>
+                        <td>윤영민</td>
+                        <td>2020-12-04</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="page1">1</button>
+            <button type="button" id="write" onclick="changeWrite()">글작성</button>
+            <br>
+        </div>
+
+        <div class="content_info" id="writeform">
+            <form class="content_q">
+                <p class="q_name">제목 
+                    <input id ="q_title" type="text" name="title">
+                    <select id="q_type">
+                        <option value="과제">과제</option>
+                        <option value="강의내용">강의내용</option>
+                        <option value="etc">etc</option>
+                    </select>
+                </p>
+
+                <p>내용 
+                    <textarea name="description" id="q_description" cols="90" rows = "29"></textarea>
+                </p>
+
+                <p class="q_foot">파일 
+                    <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png">
+                    <input type="button" id="submit" onclick="registerWrite()" value ="작성">
+                </p>
+                
+                
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
